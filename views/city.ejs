@@ -1,0 +1,22 @@
+<html>
+    
+    <% include partials/head.ejs %> 
+    
+    <body>
+      <% include partials/menu.ejs %>
+      <div class="container">
+        <% include partials/headline.ejs %>
+          <div class="row">
+              <% for(var i=1;i<=imagec;++i){ %>
+                <div class="col-md-6">
+                    <div class="thumbnail">
+                      <img src="/images/<%=city%>/<%=city%>-<%=i%>.jpg"/>
+                    </div>
+                </div>
+              <%}%>
+          </div>
+      </div>
+      <% include partials/jsqueryinclude.ejs %>
+      
+    </body>
+</html>
